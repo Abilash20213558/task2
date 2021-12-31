@@ -1,0 +1,16 @@
+.mb-3{
+    padding: 50px;
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 15%;
+    border: 1px solid burlywood;
+    margin-left: 25%;
+}
+
+
+.input:focus{
+    outline: none;
+}
+h3{
+    text-align: center;
+}

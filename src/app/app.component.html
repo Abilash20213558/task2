@@ -1,0 +1,19 @@
+
+<form class="mb-3" [formGroup]="form" (ngSubmit)="calc()">
+
+  <div class="row">
+    <div class="col">
+      <input type="number" class="form-control" placeholder="Input Base" formControlName="Base" >
+    </div>
+    <div class="col">
+      <input type="number" class="form-control" placeholder="Input Power"formControlName="power" >
+      <span class="help-block" *ngIf="form.get('Base')?. value &&form.get('power')?.value==0">both cannot consider</span>
+    </div>
+  </div>
+  <div >
+  <button class="btn btn-primary mt-5" [disabled]="form.invalid"> Calculate</button>
+  <h3> Result : {{ans}}</h3>
+</div>
+
+
+</form>
